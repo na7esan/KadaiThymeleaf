@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title　th:text="#{input.title}"></title>
+</head>
+<body>
+	<p th:text="#{input.descMsg}"></p>
+    <form method="post" action="/output">
+        <input type="text" name="val" th:value="${val}">
+        <button type="submit" th:text="#{content.submit}"></button>
+    </form>
+</body>
+</html>
